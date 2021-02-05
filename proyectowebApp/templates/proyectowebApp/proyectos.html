@@ -3,9 +3,17 @@
 {% load static %}
 {% block content %}
 
+    {% for proyecto in proyectos %}
 
+    <div><p>
+       
+            <h2 style="color:white">{{proyecto.titulo}}</h2>
+            <p style="color:aqua">{{proyecto.contenido}}</p>
+            <p img src="{{proyecto.imagen.url}}"></p>
+        
+    </p></div>
 
-
+    {% endfor %}
 
 
 {% endblock %}
